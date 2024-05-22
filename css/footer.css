@@ -1,0 +1,17 @@
+footer {
+  background: url(../img/bg.jpg);
+  text-align: center;
+  padding: 40px;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    width: auto;
+  }
+}
