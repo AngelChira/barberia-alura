@@ -1,4 +1,5 @@
-main, footer {
+main,
+footer {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -27,9 +28,9 @@ main, footer {
 } */
 
 .principal {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   padding: 3em 0;
-  width: 940px;
+  width: min(940px, 90%);
   margin: 0 auto;
 }
 
@@ -79,7 +80,13 @@ p::first-line {
 
 .map {
   padding: 3em 0;
-  background: linear-gradient(  #FEFEFE, #888);
+  width: 100%;
+  background: linear-gradient(#fefefe, #888);
+}
+
+.map .titulo-principal,
+.map p {
+  padding: 0 10px;
 }
 
 .map p {
@@ -88,18 +95,19 @@ p::first-line {
 }
 
 .map-content {
-  width: 875px;
+  width: min(875px, 90%);
   margin: 0 auto;
 }
 
 .diferenciales {
   padding: 3em 0;
+  width: 100%;
   background-color: #888;
   /* box-shadow: inset 0 0 30px red; */
 }
 
 .content-diferenciales {
-  width: 640px;
+  width: min(640px, 90%);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -135,11 +143,14 @@ p::first-line {
 
 .video {
   width: 560px;
+  width: min(560px, 90%);
   margin: 1em auto;
 }
 
 @media screen and (max-width: 480px) {
-  .principal, .map, .map-content, .content-diferenciales, .video {
+  .map-content,
+  .content-diferenciales,
+  .video {
     width: auto;
   }
 
@@ -149,17 +160,15 @@ p::first-line {
     align-items: center;
   }
 
-  .principal {
-    padding: 48px 20px;
-    text-align: justify;
-  }
-
-  .principal .titulo-principal, .map .titulo-principal, .diferenciales .titulo-principal {
+  .principal .titulo-principal,
+  .map .titulo-principal,
+  .diferenciales .titulo-principal {
     font-size: 1.5em;
     font-weight: bold;
   }
 
-  .principal p, .map p {
+  .principal p,
+  .map p {
     font-size: 15px;
   }
 
@@ -189,5 +198,4 @@ p::first-line {
   .videoYT {
     height: 250px;
   }
-
 }

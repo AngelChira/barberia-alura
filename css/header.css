@@ -1,18 +1,23 @@
 header {
-  background-color: #BBB;
+  background-color: #bbb;
   padding: 20px 0;
+  width: 100%;
 }
 
 .caja {
-  width: 940px;
-  position: relative;
+  width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navigation {
-  position: absolute;
-  top: 110px;
-  right: 0;
+.navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
 }
 
 .navigation a {
@@ -24,13 +29,19 @@ header {
 }
 
 .navigation a:hover {
-  color: #C78C19;
+  color: #c78c19;
   text-decoration: underline;
 }
 
 .navigation li {
   display: inline;
   margin: 0 0 0 15px;
+}
+
+@media (max-width: 609px) {
+  .caja {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -55,9 +66,5 @@ header {
 
   .navigation li {
     margin: 0 0 0 10px;
-  }
-
-  .caja {
-    width: auto;
   }
 }

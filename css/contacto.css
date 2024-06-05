@@ -1,13 +1,15 @@
 main {
-  width: 940px;
+  width: min(940px, 100%);
   margin: 0 auto;
 }
 
 form {
-  margin: 40px 0;
+  margin: 40px auto;
+  width: 95%;
 }
 
-form label, form legend {
+form label,
+form legend {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
@@ -17,7 +19,11 @@ form label, form legend {
   display: block;
   margin: 0 0 20px;
   padding: 10px 10px;
-  width: 50%;
+  width: min(470px, 90%);
+}
+
+textarea {
+  resize: none;
 }
 
 .turno {
@@ -58,7 +64,8 @@ thead {
   font-weight: bold;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #000;
   padding: 8px 15px;
 }
@@ -77,11 +84,15 @@ td, th {
     margin: 40px 25px;
   }
 
-  .formulario-de-contacto label, .preguntas-opciones legend, .preguntas-opciones label, .recibir-notificaciones {
+  .formulario-de-contacto label,
+  .preguntas-opciones legend,
+  .preguntas-opciones label,
+  .recibir-notificaciones {
     font-size: 18px;
   }
 
-  .formulario-de-contacto input, .formulario-de-contacto textarea {
+  .formulario-de-contacto input,
+  .formulario-de-contacto textarea {
     width: 85%;
     font-size: 15px;
   }
@@ -91,14 +102,15 @@ td, th {
     flex-direction: row;
   }
 
-  .opciones-marcar input, .recibir-notificaciones input {
+  .opciones-marcar input,
+  .recibir-notificaciones input {
     width: 10px;
   }
-  
+
   .turno {
     width: 120px;
   }
-  
+
   .recibir-notificaciones {
     margin: 0;
   }

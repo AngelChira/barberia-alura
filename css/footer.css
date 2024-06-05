@@ -1,17 +1,18 @@
 footer {
   background: url(../img/bg.jpg);
-  text-align: center;
-  padding: 40px;
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: min(177px, 100%);
 }
 
 .copyright {
   color: white;
   font-size: 13px;
-  margin: 20px;
-}
-
-@media screen and (max-width: 480px) {
-  footer {
-    width: auto;
-  }
+  text-align: center;
 }
